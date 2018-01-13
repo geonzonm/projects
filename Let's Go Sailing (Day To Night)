@@ -1,0 +1,225 @@
+//This is a day to night shot. 
+//A couple sailing to watch aurora lights
+//Name: Millicent Geonzon
+
+var draw = function() {
+    if(mouseX < 150){
+        background(56,220,242); //DAY TIME
+        fill(255,255,0);
+        ellipse(20,5,150,150); //Sun
+        
+        //Sun Rays
+        stroke(236,242,56);
+        strokeWeight(2);
+        line(50,90,80,150);
+        line(10,90,10,140);
+        line(85,65,150,110);
+        line(110,20,180,30);
+        
+        //Water
+        noStroke();
+        fill(56,155,242);
+        rect(0,300,400,200);
+        
+        //Small crocodile1
+        fill(90,170,10);
+        ellipse(200,350,20,20);
+        ellipse(220,350,40,15);
+        
+        //Crocodile's eyes
+        fill(255);
+        ellipse(195,355,5,5);
+        fill(0);
+        ellipse(195,355,2,2);
+        
+        fill(255);
+        ellipse(195,345,5,5);
+        fill(0);
+        ellipse(195,345,2,2);
+        
+        //Small crocodile2
+        fill(90,170,10);
+        ellipse(40,350,20,20);
+        ellipse(60,350,40,15);
+        
+        //Crocodile's eyes
+        fill(255);
+        ellipse(35,355,5,5);
+        fill(0);
+        ellipse(35,355,2,2);
+        
+        fill(255);
+        ellipse(35,345,5,5);
+        fill(0);
+        ellipse(35,345,2,2);
+        
+        var drawSailBoat = function() {
+            noStroke();
+            fill(236,237,211);
+            triangle(25,200,130,120,130,290);//first flap
+            stroke(133,82,16);
+            strokeWeight(4);
+            line(130,120,130,300);
+    
+            noStroke();
+            triangle(250,280,132,120,135,290);
+    
+            fill(189,129,70);
+            quad(25,290,250,290,200,330,80,330);
+}; 
+drawSailBoat();
+        //SmallerBoat
+        var drawSailBoat = function() {
+            noStroke();
+            fill(236,237,211);
+            triangle(285,255,320,250,320,280);//first flap
+            stroke(133,82,16);
+            strokeWeight(4);
+            line(320,250,320,290);
+    
+            noStroke();
+            triangle(360,275,322,250,325,280);
+    
+            fill(189,129,70);
+            quad(260,290,380,290,360,330,280,330);
+}; 
+drawSailBoat();
+    }//SUNSET 
+    else if(mouseX < 250){
+        background(250,167,85);
+        fill(255,255,0);
+        ellipse(20,199,150,150); //Sun
+        
+        //Clouds
+        noStroke();
+        fill(255);
+        ellipse(20,220,55,55);
+        ellipse(57,220,65,65);
+        ellipse(70,220,55,55);
+        
+        noStroke();
+        fill(255);
+        ellipse(250,70,55,55);
+        ellipse(290,70,65,65);
+        ellipse(335,70,55,55);
+        
+        
+        //Water
+        noStroke();
+        fill(56,155,242);
+        rect(0,300,400,200); 
+        
+        //Small crocodile1
+        fill(90,170,10);
+        ellipse(200,350,40,40);
+        ellipse(220,350,50,25);
+        
+        //Crocodile's eyes
+        fill(255);
+        ellipse(195,355,15,5);
+        fill(0);
+        ellipse(195,355,5,5);
+        
+        fill(255);
+        ellipse(195,345,15,5);
+        fill(0);
+        ellipse(195,345,5,5);
+        
+        //Small crocodile2
+        fill(90,170,10);
+        ellipse(40,350,40,40);
+        ellipse(60,350,50,25);
+        
+        //Crocodile's eyes
+        fill(255);
+        ellipse(35,355,15,5);
+        fill(0);
+        ellipse(35,355,5,5);
+        
+        fill(255);
+        ellipse(35,345,15,5);
+        fill(0);
+        ellipse(35,345,5,5);
+        
+        var drawSailBoat = function() {
+            noStroke();
+            fill(236,237,211);
+            triangle(25,200,130,120,130,290);//first flap
+            stroke(133,82,16);
+            strokeWeight(4);
+            line(130,120,130,300);
+    
+            noStroke();
+            triangle(250,280,132,120,135,290);
+    
+            fill(189,129,70);
+            quad(25,290,250,290,200,330,80,330);        
+    }; 
+        drawSailBoat();
+        
+        //SmallerBoat
+        var drawSailBoat = function() {
+            noStroke();
+            fill(236,237,211);
+            triangle(285,255,320,250,320,280);//first flap
+            stroke(133,82,16);
+            strokeWeight(4);
+            line(320,250,320,290);
+    
+            noStroke();
+            triangle(360,275,322,250,325,280);
+    
+            fill(189,129,70);
+            quad(260,290,380,290,360,330,280,330);
+}; 
+drawSailBoat();
+    }
+    else{//NIGHT TIME
+        background(0);
+        fill(143,140,137);
+        ellipse(20,5,150,150); //Moon
+        
+        //Water
+        noStroke();
+        fill(56,155,242);
+        rect(0,300,400,200);    
+    
+        //BIG CROCODILE
+        fill(90,170,10);
+        ellipse(200,350,70,40);
+        ellipse(220,350,100,35);
+        
+        //Crocodile's eyes
+        fill(255);
+        ellipse(195,355,15,5);
+        fill(0);
+        ellipse(195,355,5,5);
+        
+        fill(255);
+        ellipse(195,345,15,5);
+        fill(0);
+        ellipse(195,345,5,5);        
+        
+        var drawAuroraLights = function(){
+            noStroke();
+            for(var x = 400; x > -50; x-=5){
+            for(var y = 400; y > -50; y -= 5){
+            fill(x,y,255);
+            ellipse(x,y,70,70);
+        }
+    }    
+};
+drawAuroraLights();
+
+var drawShadows = function(){
+    fill(0);
+    ellipse(200,400,600,200);
+    ellipse(150,270,20,20);
+    ellipse(150,300,10,40);
+    ellipse(160,260,20,20);
+    ellipse(160,300,10,70);
+};
+drawShadows();
+    
+    }
+};
