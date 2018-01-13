@@ -1,0 +1,33 @@
+//Created using Hatch Canada
+//Name: Millicent Geonzon
+//It's a program that wherever I move the mouse, it draws circles and leaves a trail of fading smaller circles.
+
+var maxTrailSize = 60;
+var xPos = []; 
+var yPos = [];
+fill(12,242,81);
+
+var saveLastPosition = function(){
+    xPos[maxTrailSize-1] = mouseX;
+    yPos[maxTrailSize-1] = mouseY;
+};
+
+var saveTrailPositions = function(){
+    for(var i=1; i<maxTrailSize; i++) {
+        xPos[i-1] = xPos[i];
+        yPos[i-1] = yPos[i];
+    } 
+};
+
+var drawTrail = function(){
+    for(var i=0; i<maxTrailSize; i++) {
+        ellipse(xPos[i], yPos[i], i/2, i/2);
+    }
+};
+
+var draw = function() {
+    background(51, 51, 51); 
+    saveLastPosition();
+    saveTrailPositions();
+    drawTrail();
+};
