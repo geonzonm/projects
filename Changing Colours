@@ -1,0 +1,14 @@
+//Created using Hatch Canada's platform
+//Name: Millicent Geonzon
+
+var barWidth = 55;
+    var hueC = 60;
+    colorMode(HSB,100);
+    noStroke();
+
+var draw = function(){
+    hueC = mouseY;
+    fill(hueC,255,255);
+    fill(20,100,255,9);
+    rect(mouseX,0, barWidth, height);
+};
