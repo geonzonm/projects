@@ -1,0 +1,15 @@
+//Created using Hatch Canada's platform
+//Name: Millicent Geonzon
+
+var draw = function() {
+    background(100,0,100);
+    fill(255);
+    stroke(0,255,255);
+    strokeWeight(5);
+    ellipse(mouseX, mouseY, 90,90);
+
+    fill(255);
+    stroke(0,255,255);
+    strokeWeight(5);
+    ellipse(100, 100, 90,90);
+};
