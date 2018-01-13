@@ -1,5 +1,7 @@
 //Created using Hatch Canada's platform
 //Name: Millicent Geonzon
+//Created a program that makes vertical bars using mouse Y position, 
+//as well as adjusted the widths of the bars and added a semi-transparent background.
 
 var barWidth = 55;
     var hueC = 60;
