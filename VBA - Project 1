@@ -1,0 +1,14 @@
+Sub MyFirstProgram()
+
+    'Create a worksheet
+    Worksheets.Add
+        
+    'Enter values into cells
+    Range("A1").Value = "Millicent Geonzon"
+    Range("A2").Value = Date
+    Range("A3").Value = Time
+        
+    'Format cells
+    Range("A1:A2").Interior.Color = rgbGold
+    
+End Sub
